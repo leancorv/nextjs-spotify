@@ -1,5 +1,6 @@
 import { useSession } from "next-auth/react"
 import { useEffect, useState } from "react"
+import Poster from "./Poster";
 import Search from "./Search"
 
 function Body({ spotifyApi }) {
@@ -25,7 +26,7 @@ function Body({ spotifyApi }) {
         res.body.tracks.items.map((track) => {
           return {
             id: track.id,
-            artist: track.artist[0].name,
+            artist: track.artists[0].name,
             title: track.name,
             uri: track.uri,
             albumUrl: track.album.images[0].url,
@@ -46,7 +47,7 @@ function Body({ spotifyApi }) {
         res.body.albums.items.map((track) => {
           return {
             id: track.id,
-            artist: track.artist[0].name,
+            artist: track.artists[0].name,
             title: track.name,
             uri: track.uri,
             albumUrl: track.images[0].url,
@@ -69,7 +70,7 @@ function Body({ spotifyApi }) {
             // chooseTrack={chooseTrack}
           />
         )) : searchResults.slice(0,4).map((track) => (
-          <Poster 
+          <Poster
             key={track.id} 
             track={track} 
             // chooseTrack={chooseTrack}
