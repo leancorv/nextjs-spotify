@@ -13,7 +13,27 @@ function Body({ spotifyApi }) {
     if (!accessToken) return;
     spotifyApi.setAccessToken(accessToken);
   }, [accessToken]);
-  
+
+  // Searching...
+
+  useEffect(() => {
+    if (!search) return setSearchResults([])
+    if (!accessToken) return;
+
+    spotifyApi.searchTracks(search).then((res) => {
+      setSearchResults(res.body.tracks.items.map((track) => {
+        return {
+          id: track.id,
+          artist: track.artist[0].name,
+          title: track.name,
+          uri: track.uri,
+          albumUrl: track.album.images[0].url,
+          popularity: track.popularity,
+        }
+      }))
+    })
+  }, [search, accessToken]);
+
 
   return (
     <section className="bg-black ml-24 py-4 space-y-8 md:max-w-6xl flex-grow md:mr-2.5">
