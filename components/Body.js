@@ -21,18 +21,41 @@ function Body({ spotifyApi }) {
     if (!accessToken) return;
 
     spotifyApi.searchTracks(search).then((res) => {
-      setSearchResults(res.body.tracks.items.map((track) => {
-        return {
-          id: track.id,
-          artist: track.artist[0].name,
-          title: track.name,
-          uri: track.uri,
-          albumUrl: track.album.images[0].url,
-          popularity: track.popularity,
-        }
-      }))
-    })
+      setSearchResults(
+        res.body.tracks.items.map((track) => {
+          return {
+            id: track.id,
+            artist: track.artist[0].name,
+            title: track.name,
+            uri: track.uri,
+            albumUrl: track.album.images[0].url,
+            popularity: track.popularity,
+          };
+        })
+      );
+    });
   }, [search, accessToken]);
+
+  // New Releases...
+
+  useEffect(() => {
+    if (!accessToken) return;
+
+    spotifyApi.getNewReleases().then((res) => {
+      setNewReleases(
+        res.body.albums.items.map((track) => {
+          return {
+            id: track.id,
+            artist: track.artist[0].name,
+            title: track.name,
+            uri: track.uri,
+            albumUrl: track.images[0].url,
+            popularity: track.popularity,
+          };
+        })
+      );
+    });
+  }, [accessToken]);
 
 
   return (
