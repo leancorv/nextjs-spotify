@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import Poster from "./Poster";
 import Search from "./Search"
 
-function Body({ spotifyApi }) {
+function Body({ spotifyApi, chooseTrack }) {
   const {data: session} = useSession();
   const { accessToken } = session;
   const [search, setSearch] = useState("");
@@ -67,13 +67,13 @@ function Body({ spotifyApi }) {
           <Poster 
             key={track.id} 
             track={track} 
-            // chooseTrack={chooseTrack}
+            chooseTrack={chooseTrack}
           />
         )) : searchResults.slice(0,4).map((track) => (
           <Poster
             key={track.id} 
             track={track} 
-            // chooseTrack={chooseTrack}
+            chooseTrack={chooseTrack}
           />
         ))}
       </div>
