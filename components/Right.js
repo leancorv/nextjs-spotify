@@ -2,6 +2,7 @@ import { HiOutlineShieldCheck } from "react-icons/hi";
 import { MdOutlineSettings } from "react-icons/md";
 import { BiBell } from "react-icons/bi";
 import { ViewGridIcon } from "@heroicons/react/solid";
+import Dropdown from "./Dropdown";
 
 function Right() {
   return (
@@ -14,6 +15,7 @@ function Right() {
           <BiBell className="text-[#ccc] text-xl" />
         </div>
         {/* Profile */}
+        <Dropdown />
       </div>
     </section>
   )
