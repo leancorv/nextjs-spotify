@@ -100,7 +100,7 @@ function Body({ spotifyApi, chooseTrack }) {
         </div>
 
         {/* Tracks */}
-        <div>
+        <div className="w-full pr-11">
           <h2 className="text-white font-bold mb-3">
             {searchResults.length === 0 ? "New Releases" : "Tracks"}
           </h2>
