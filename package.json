@@ -11,6 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
+    "better-react-spinkit": "^2.0.4",
+    "lodash": "^4.17.21",
     "next": "12.2.3",
     "next-auth": "^4.10.2",
     "react": "18.2.0",
