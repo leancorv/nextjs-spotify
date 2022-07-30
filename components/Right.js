@@ -60,6 +60,7 @@ function Right({ spotifyApi, chooseTrack }) {
             />
           ))}
         </div>
+        <button className="btn">View All</button>
       </div>
     </section>
   )
