@@ -3,9 +3,10 @@ This is a exersice project build just for practice and fun.
 ## Technologies
 Next.js, TailwindCSS, NextAuth, Spotify Api, RecoilJs
 ## Screenshots
-![ScreenShot](https://raw.githubusercontent.com/lecov/nextjs-spotify/main/screenshots/nextjs-spotify-login.png)
-![ScreenShot](https://raw.githubusercontent.com/lecov/nextjs-spotify/main/screenshots/nextjs-spotify-dashboard.png)
-![ScreenShot](https://raw.githubusercontent.com/lecov/nextjs-spotify/main/screenshots/nextjs-spotify-searching.png)
+![ScreenShot](/screenshots/nextjs-spotify-login.png "Login")
+![ScreenShot](/screenshots/nextjs-spotify-dashboard.png "Dashboard")
+![ScreenShot](/screenshots/nextjs-spotify-searching.png "Searching")
+
 ## What's in this project?
 - Spotify UI
 - Fetching Spotify Api
