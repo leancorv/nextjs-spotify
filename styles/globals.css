@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-      @apply bg-black scrollbar-hide;
+      @apply font-body bg-black scrollbar-hide;
     }
 }
 
