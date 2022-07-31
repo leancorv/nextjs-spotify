@@ -14,7 +14,7 @@ Next.js, TailwindCSS, NextAuth, Spotify Api, RecoilJs
   title="Dashboard"
   style="display: inline-block; margin: 0 auto; max-width: 700px">
 <img
-  src="/public/screenshots/nextjs-spotify-dashboard.png"
+  src="/public/screenshots/nextjs-spotify-searching.png"
   alt="Searching"
   title="Searching"
   style="display: inline-block; margin: 0 auto; max-width: 700px">
