@@ -3,9 +3,21 @@ This is a exersice project build just for practice and fun.
 ## Technologies
 Next.js, TailwindCSS, NextAuth, Spotify Api, RecoilJs
 ## Screenshots
-![ScreenShot](/screenshots/nextjs-spotify-login.png "Login")
-![ScreenShot](/screenshots/nextjs-spotify-dashboard.png "Dashboard")
-![ScreenShot](/screenshots/nextjs-spotify-searching.png "Searching")
+<img
+  src="/public/screenshots/nextjs-spotify-login.png"
+  alt="login"
+  title="Login"
+  style="display: inline-block; margin: 0 auto; max-width: 700px">
+<img
+  src="/public/screenshots/nextjs-spotify-dashboard.png"
+  alt="Dashboard"
+  title="Dashboard"
+  style="display: inline-block; margin: 0 auto; max-width: 700px">
+<img
+  src="/public/screenshots/nextjs-spotify-dashboard.png"
+  alt="Searching"
+  title="Searching"
+  style="display: inline-block; margin: 0 auto; max-width: 700px">
 
 ## What's in this project?
 - Spotify UI
