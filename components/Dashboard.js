@@ -16,7 +16,7 @@ const spotifyApi = new SpotifyWebApi({
 
 function Dashboard() {
     const { data: session } = useSession();
-    const { accessToken } = session;
+    const accessToken = session?.accessToken;
 
     const [playingTrack, setPlayingTrack] = useRecoilState(playingTrackState);
     const [showPlayer, setShowPlayer] = useState(false);
